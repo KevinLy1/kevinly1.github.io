@@ -1,0 +1,46 @@
+:root {
+    --skill-card-height: 200px;
+}
+
+.dark-theme {
+    --skill-card-bg-color: #1E2334;
+    --skill-card-border-shadow: #000000;
+}
+
+.light-theme {
+    --skill-card-bg-color: #FAFAFA;
+    --skill-card-border-shadow: #D3D3D3;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: -2px 1px 8px 1px var(--skill-card-border-shadow); 
+    height: var(--skill-card-height);
+    background-color: var(--skill-card-bg-color);
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+}
+
+.skill-card-top > img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+    transform: scale(.8);
+    align-self: center;
+}
+
+.skill-card-top {
+    height: 80%;
+    display: flex;
+}
+
+.skill-card-body {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

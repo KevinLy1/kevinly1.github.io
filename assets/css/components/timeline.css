@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+:root {
+  --timeline-dates-width: 250px;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.timeline-dates {
+  flex: 0 0 auto;
+  width: var(--timeline-dates-width);
+  padding-right: 20px;
+}
+
+.timeline-date {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.timeline-date:not(.active) {
+  opacity: 0.6;
+}
+
+.timeline-date.active {
+  font-weight: bold;
+  border-color: #E1094A;
+}
+
+.timeline-date span:first-child {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.timeline-date span:last-child {
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+  transition: color 0.3s ease;
+}
+
+.timeline-content {
+  flex: 1;
+  overflow: hidden;
+}
+
+.timeline-description {
+  display: none;
+}
+
+.timeline-description.active {
+  display: block;
+}
+
+.timeline-description h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline-description p, li {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.timeline-description ul {
+  text-align: start;
+  padding-left: 20px;
+}
+
+.timeline-description ul li {
+  list-style: circle;
+}
+
+@media screen and (max-width: 992px) {
+  .timeline-dates {
+    width: calc(var(--timeline-dates-width)/2);
+  }
+}

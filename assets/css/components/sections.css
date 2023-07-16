@@ -1,0 +1,174 @@
+.dark-theme {
+  --section-title-color: #FFFFFF;
+  --about-bg-color: #111821;
+}
+
+.light-theme {
+  --section-title-color: #292929;
+  --about-bg-color: #FAFAFA;
+}
+
+section {
+  position: relative;
+}
+
+section:nth-of-type(n+2) {
+  padding-top: 2rem;
+}
+
+section .section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  padding: .5rem 0 .5rem 1.5rem;
+  color: var(--section-title-color);
+  margin-bottom: 2rem;
+}
+
+section .section-title::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    background-color: #E1094A;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+section .section-description {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+section .button {
+  color: var(--header-nav-button-color-link);
+}
+
+section .button:hover {
+  text-decoration: none;
+}
+
+/******************************* SECTION ABOUT *******************************/
+
+section#about {
+  background-color: var(--about-bg-color);
+}
+
+section#about .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section#about .bio .bio-name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1.3rem 0;
+  color: var(--section-title-color);
+}
+
+section#about .bio .bio-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+
+section#about .bio .bio-description p {
+  margin-bottom: 1rem;
+}
+
+section#about .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+section#about .buttons > .button:nth-of-type(2) {
+  background-color: #384F6C;
+}
+
+section#about .bio {
+  width: 70%;
+}
+
+section#about .photo {
+  width: 20%;
+}
+
+section#about .photo > img {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  section#about .bio {
+    width: 100%;
+  }
+  
+  section#about .photo {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  section#about .photo > img {
+    width: 40%;
+  }
+}
+
+/******************************* SECTION SKILLS *******************************/
+
+section#skills .grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  section#skills .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  section#skills .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section#skills .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section#skills .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/******************************* SECTION PROJECTS *******************************/
+
+section#projects .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  font-family: var(--project-card-font-serif);
+}
+
+section#projects .section-description + p {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  section#projects .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section#projects .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

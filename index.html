@@ -1,280 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Ly - Portfolio | D&eacute;veloppeur web</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&display=swap" rel="stylesheet">
+    <title>Portfolio - Kevin Ly</title>
+    <!-- <meta name="description" content="Je conçois et réalise des sites ou applications web. Création de sites internet ergonomiques. Voici mon portfolio où vous retrouverez tous mes projets.">
+    <meta name="author" content="Kevin Ly">
+    <meta name="Keywords" content="portfolio, kevinly, Referencement web, Kevin Ly, Developpeur web">
+    <meta name="Robots" content="all"> -->
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
     <!-- Styles -->
-    <!-- Bootstrap v5.3.0-alpha1 -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <!-- Font Awesome 6.3.0 min -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- https://github.com/devicons/devicon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Font Awesome 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Devicon 2.15.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css" integrity="sha512-X2hbziex+UPQ+KdI4BWI+39jEDhf2Smc6bfFI/FTIzWnt7mbwZCUU4RWalnMfxtHCpISlexzmd2kvPFJCliiPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
 </head>
 
-<body>
+<body class="dark-theme">
     <header>
-        <nav class="navbar navbar-expand-lg bg-nav fixed-top">
-            <div class="container">
-                <h1><a class="navbar-brand" href="#">Kevin Ly</a></h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">&Agrave; propos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#career">Parcours</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Comp&eacute;tences</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav>
+            <div id="minimize-toggle"><i class="fa-solid fa-circle-arrow-left"></i></div>
+            <h1><a href="#">Kevin Ly</a></h1>
+
+            <div id="burger-icon">&#9776;</div>
+
+            <div class="profile">
+                <img class="profile-image" src="./assets/img/kevin_ly.jpg" alt="Kevin Ly">
+                <p class="profile-text">Bonjour, je m'appelle Kevin Ly et je suis développeur web. Bienvenue sur mon portfolio !</p>
+                <ul class="profile-social">
+                    <li><a href="tel:+33634370766"><i class="fa fa-phone"></i></a></li>
+                    <li><a href="mailto:kevin.ly.ap@outlook.com"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kevin-ly-12579573/" target="_blank"><i class="devicon-linkedin-plain"></i></a></li>
+                    <li><a href="https://github.com/KevinLy1/kevin-ly" target="_blank"><i class="devicon-github-original"></i></a></li>
+                </ul>
             </div>
+
+            <ul class="menu">
+              <li><a href="#about"><i class="fa fa-user"></i><span class="label">À propos</span></a></li>
+              <li><a href="#career"><i class="fa fa-file-lines"></i><span class="label">Parcours</span></a></li>
+              <li><a href="#skills"><i class="fa fa-briefcase"></i><span class="label">Compétences</span></a></li>
+              <li><a href="#projects"><i class="fa fa-laptop-code"></i><span class="label">Projets</span></a></li>
+              <li><a href="#contact"><i class="fa fa-envelope-open-text"></i><span class="label">Contact</span></a></li>
+            </ul>
+
+            <a class="button" href="#contact"><i class="fa fa-paper-plane"></i> Me contacter</a>
+
+            <div id="theme-toggle"><i class="fa fa-moon"></i></div>
         </nav>
     </header>
 
     <main>
-        <section id="about" class="text-center section-about">
-            <h2 class="mb-4">&Agrave; propos</h2>
-            <img class="img-circle mb-4" src="assets/img/about_picture_kevin_ly.jpg" alt="Kevin Ly" />
+        <section id="about">
             <div class="container">
-                <p>Apr&egrave;s 4 ann&eacute;es d'exp&eacute;rience en tant qu'ing&eacute;nieur projets impliqu&eacute;
-                    dans de nombreux projets centr&eacute;s autour du d&eacute;veloppement d'applications web et
-                    d'applications mobiles, j'entame ma reconversion professionnelle pour devenir d&eacute;veloppeur
-                    avec <a href="https://alt-rh.com/" target="_blank">ALT-RH Consulting</a>.</p>
-                <p>La formation dure 910 heures sur une dur&eacute;e de 6 mois. Pour plus d'informations concernant la
-                    formation, cliquer sur ce <a href="https://alt-rh.com/formations/developpeur-web-mobile/"
-                        target="_blank">lien</a>.</p>
-                <p>Je suis &agrave; la recherche d'un stage d'une dur&eacute;e de 1 mois: du 21 ao&ucirc;t au au 22
-                    septembre.</p>
-                <p>Mon CV est consultable <a href="./downloads/Curriculum_Vitae_-_Kevin_Ly.pdf" target="_blank">ici</a>
-                    ainsi que mon <a href="https://github.com/KevinLy1/" target="_blank">GitHub</a>.</p>
+                <div class="bio">
+                    <h2 class="bio-name">Kevin Ly</h2>
+                    <h3 class="bio-title">Développeur web</h3>
+                    <div class="bio-description">
+                        <p>Après 4 années d'expérience en tant qu'ingénieur projets impliqué dans de nombreux projets centrés autour du développement d'applications web et d'applications mobiles, j'entame ma reconversion professionnelle pour devenir développeur avec <a href="https://alt-rh.com/" target="_blank">ALT-RH Consulting</a>.</p>
+                        <p>La formation dure 910 heures sur une durée de 6 mois. Pour plus d'informations concernant la formation, cliquer sur ce <a href="https://alt-rh.com/formations/developpeur-web-mobile/" target="_blank">lien</a>.</p>
+                        <p>Je suis à la recherche d'un stage d'une durée de 1 mois: du 21 août au au 22 septembre.</p>
+                        <p>Mon CV est consultable <a href="./downloads/Curriculum_Vitae_-_Kevin_Ly.pdf" target="_blank">ici</a> ainsi que mon <a href="https://github.com/KevinLy1/" target="_blank">GitHub</a>.</p>
+    
+                        <div class="buttons">
+                            <a class="button" href="#projects"><i class="fa fa-circle-arrow-right"></i> Portfolio</a>
+                            <a class="button" href="./downloads/Curriculum_Vitae_-_Kevin_Ly.pdf" target="_blank"><i class="fa fa-file-lines"></i> Voir CV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="./assets/img/kevin_ly.jpg" alt="Kevin Ly">
+                </div>
             </div>
         </section>
 
-        <section id="career" class="section-career">
+        <section id="career">
             <div class="container">
-                <div class="text-center">
-                    <h2>Parcours</h2>
-                    <p>Formations et exp&eacute;riences professionnelles</p>
-                </div>
-                <div class="container py-5">
-                    <div class="main-timeline">
-                        <div class="timeline left">
-                            <div class="card">
-                                <div class="card-body p-4 row">
-                                    <div class="col-md-3 d-flex justify-content-center hidden-600">
-                                        <img src="./assets/img/ALT-RH_logo.png" alt="Logo ALT-RH"
-                                            class="career-logo align-self-center">
-                                    </div>
-                                    <div class="col-md-9">
-                                        <h3>Mars 2023</h3>
-                                        <h4>D&eacute;veloppeur web &amp; web mobile</h4>
-                                        <p class="mb-0">Formation avec <a
-                                                href="https://alt-rh.com/formations/developpeur-web-mobile/"
-                                                target="_blank">ALT-RH : D&eacute;veloppeur web &amp; web mobile</a>.
-                                        </p>
-                                        <p class="mb-0"><strong>Comp&eacute;tences :</strong> HTML, CSS, JavaScript, Bootstrap, React, SQL, PHP, Symfony</p>
-                                    </div>
-                                </div>
-                            </div>
+                <h2 class="section-title">Parcours</h2>
+                <p class="section-description">Formations et expériences professionnelles</p>
+                <div class="timeline">
+                    <div class="timeline-dates">
+                        <div class="timeline-date active">
+                            <span>Mars 2023</span>
+                            <span>Développeur web & web mobile</span>
                         </div>
-                        <div class="timeline right">
-                            <div class="card">
-                                <div class="card-body p-4 row">
-                                    <div class="col-md-3 d-flex justify-content-center hidden-600">
-                                        <img src="./assets/svg/the-odin-project_logo.svg" alt="Logo The Odin Project"
-                                            class="career-logo align-self-center">
-                                    </div>
-                                    <div class="col-md-9">
-                                        <h3>Juillet 2022</h3>
-                                        <h4>Autodidacte - D&eacute;veloppeur Full Stack</h4>
-                                        <p class="mb-0">Suivi du parcours Full-Stack Javascript avec <a
-                                                href="https://www.theodinproject.com/paths" target="_blank">The Odin
-                                                Project</a>.</p>
-                                        <p class="mb-0"><strong>Comp&eacute;tences :</strong> HTML, CSS, Full Stack JS,
-                                            Git, GitHub, Unix, NodeJS</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="timeline-date">
+                            <span>Juillet 2022</span>
+                            <span>Autodidacte - Développeur web</span>
                         </div>
-                        <div class="timeline left">
-                            <div class="card">
-                                <div class="card-body p-4 row">
-                                    <div class="col-md-3 d-flex justify-content-center hidden-600">
-                                        <img src="./assets/img/eurofins_logo.png" alt="Logo Eurofins"
-                                            class="career-logo align-self-center">
-                                    </div>
-                                    <div class="col-md-9">
-                                        <h3>Mars 2018 - Juin 2022</h3>
-                                        <h4>Ing&eacute;nieur projets multi-sites</h4>
-                                        <p class="mb-0"><a
-                                                href="https://www.eurofins.fr/amiante/pr%C3%A9l%C3%A8vements/"
-                                                target="_blank">Eurofins Pr&eacute;l&egrave;vement pour le
-                                                B&acirc;timent France</a></p>
-                                        <p class="mb-0">Gestion de projets &agrave; l’&eacute;chelle nationale :
-                                            r&eacute;daction du cahier des charges jusqu’au d&eacute;ploiement des
-                                            solutions<br>
-                                            Consolidation des KPIs au niveau national<br>
-                                            R&eacute;f&eacute;rent sur la majorit&eacute; des outils informatiques :
-                                            Support de premier niveau et formateur interne<br>
-                                            Int&eacute;gration d’un laboratoire au r&eacute;seau Eurofins dans le cadre
-                                            d’une acquisition<br>
-                                            Gestion des projets EDI (Echange de Donn&eacute;es Informatis&eacute;),
-                                            interface entre les clients et les &eacute;quipes support (IT, technique,
-                                            commercial, qualit&eacute;, ...)
-                                        </p>
-                                        <p class="mb-0"><strong>Comp&eacute;tences :</strong> Gestion de projets,
-                                            r&eacute;daction de specs, r&eacute;alisation de DOM avec les
-                                            d&eacute;veloppeurs, VBA</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="timeline-date">
+                            <span>Mars 2018 - Juin 2022</span>
+                            <span>Ingénieur projets multi-sites</span>
                         </div>
-                        <div class="timeline right">
-                            <div class="card">
-                                <div class="card-body p-4 row">
-                                    <div class="col-md-3 d-flex justify-content-center hidden-600"><img
-                                            src="./assets/img/chimie-paris_logo.png" alt="Logo ENSCP"
-                                            class="career-logo align-self-center"></div>
-                                    <div class="col-md-9">
-                                        <h3>Septembre 2014 - Septembre 2017</h3>
-                                        <h4>Dipl&ocirc;me d'ing&eacute;nieur chimiste</h4>
-                                        <p class="mb-0"><a
-                                                href="https://www.chimieparistech.psl.eu/formations/cycle-ingenieur/"
-                                                target="_blank">Chimie ParisTech</a>.</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="timeline-date">
+                            <span>2014 - 2017</span>
+                            <span>Diplôme d'ingénieur chimiste</span>
+                        </div>
+                    </div>
+        
+                    <div class="timeline-content">
+                        <div class="timeline-description active">
+                            <h3>Développeur web & web mobile</h3>
+                            <p>Formation avec <a href="https://alt-rh.com/formations/developpeur-web-mobile/" target="_blank">ALT-RH : Développeur web & web mobile</a>.</p>
+                            <p><strong>Compétences :</strong> HTML, CSS, JavaScript, Bootstrap, React, SQL, PHP, Symfony</p>
+                        </div>
+                        <div class="timeline-description">
+                            <h3>Autodidacte - Développement web</h3>
+                            <p>Suivi du parcours Foundations avec <a href="https://www.theodinproject.com/paths/foundations/courses/foundations" target="_blank">The Odin Project</a>.</p>
+                            <p><strong>Compétences :</strong> HTML, CSS, Git, GitHub, Unix</p>
+                        </div>
+                        <div class="timeline-description">
+                            <h3>Ingénieur projets multi-sites</h3>
+                            <p><a href="https://www.eurofins.fr/amiante/pr%C3%A9l%C3%A8vements/" target="_blank">Eurofins
+                                    Prélèvement pour le Bâtiment France</a></p>
+                            <ul>
+                                <li>Gestion de projets à l’échelle nationale : rédaction du cahier des charges jusqu’au déploiement des solutions</li>
+                                <li>Consolidation des KPIs au niveau national</li>
+                                <li>Référent sur la majorité des outils informatiques :
+                                <li>Support de premier niveau et formateur interne</li>
+                                <li>Intégration d’un laboratoire au réseau Eurofins dans le cadre d’une acquisition</li>
+                                <li>Gestion des projets EDI (Echange de Données Informatisé), interface entre les clients et les équipes support (IT, technique, commercial, qualité, ...)</li>
+                            </ul>
+                            <p><strong>Compétences :</strong> Gestion de projets, rédaction de specs, Visual Basic for Applications</p>
+                        </div>
+                        <div class="timeline-description">
+                            <h3>Diplôme d'ingénieur chimiste</h3>
+                            <p>Diplômé de <a href="https://www.chimieparistech.psl.eu/formations/cycle-ingenieur/" target="_blank">Chimie ParisTech</a>.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="section-skills">
+        <section id="skills">
             <div class="container">
-                <div class="text-center">
-                    <h2>Comp&eacute;tences</h2>
-                    <p>Comp&eacute;tences acquises ou en cours d'acquisition</p>
-                </div>
-
-                <div class="row">
-                    <!-- To do : javascript -->
-                    <!-- <ul class="skills-sorting d-flex list-inline justify-content-around">
-                        <li><a href="#" class=" active" data-group="all">Tous</a></li>
-                        <li><a href="#" data-group="webdev">D&eacute;veloppement</a></li>
-                        <li><a href="#" data-group="programming">Programmation</a></li>
-                        <li><a href="#" data-group="other">Autre</a></li>
-                    </ul> -->
-
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2" data-groups='["webdev"]'>
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <img src="./assets/svg/html_5_icon.svg" alt="HTML5" class="skills-img" />
-                            <h3>HTML5</h3>
+                <h2 class="section-title">Compétences</h2>
+                <p class="section-description">Compétences acquises ou en cours d'acquisition</p>
+                <div class="grid">
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <img src="./assets/svg/html_5_icon.svg" alt="HTML5">
+                        </div>
+                        <div class="skill-card-body">
+                            HTML5
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2" data-groups='["webdev"]'>
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <img src="./assets/svg/css_3_icon.svg" alt="CSS3" class="skills-img" />
-                            <h3>CSS3</h3>
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <img src="./assets/svg/css_3_icon.svg" alt="CSS3">
+                        </div>
+                        <div class="skill-card-body">
+                            CSS3
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2" data-groups='["webdev", "programming"]'>
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <img src="./assets/svg/javascript_icon.svg" alt="JavaScript" class="skills-img" />
-                            <h3>JavaScript</h3>
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <img src="./assets/svg/javascript_icon.svg" alt="JavaScript">
+                        </div>
+                        <div class="skill-card-body">
+                            JavaScript
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2" data-groups='["webdev", "programming"]'>
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <img src="./assets/svg/php_icon.svg" alt="PHP" class="skills-img" />
-                            <h3>PHP</h3>
-                            <p>En cours</p>
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <img src="./assets/svg/php_icon.svg" alt="PHP">
+                        </div>
+                        <div class="skill-card-body">
+                            PHP
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2" data-groups='["webdev"]'>
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <img src="./assets/svg/nodejs_icon.svg" alt="Node.js" class="skills-img" />
-                            <h3>Node.js</h3>
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <img src="./assets/svg/nodejs_icon.svg" alt="Node.js">
+                        </div>
+                        <div class="skill-card-body">
+                            Node.js
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2" data-groups='["webdev"]'>
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <img src="./assets/svg/react.svg" alt="React" class="skills-img" />
-                            <h3>React</h3>
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <img src="./assets/svg/react.svg" alt="React">
+                        </div>
+                        <div class="skill-card-body">
+                            React
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2" data-groups='["webdev"]'>
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <img src="./assets/svg/wordpress_icon.svg" alt="WordPress" class="skills-img" />
-                            <h3>WordPress</h3>
-                            <p>En cours</p>
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <img src="./assets/svg/wordpress_icon.svg" alt="WordPress">
+                        </div>
+                        <div class="skill-card-body">
+                            WordPress
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2" data-groups='["other"]'>
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <img src="./assets/svg/mysql.svg" alt="SQL-MySQL" class="skills-img" />
-                            <h3>SQL &amp; MySQL</h3>
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <img src="./assets/svg/sql.svg" alt="SQL">
+                        </div>
+                        <div class="skill-card-body">
+                            SQL
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2" data-groups='["other"]'>
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <img src="./assets/svg/git_and_github_icon.svg" alt="Git-GitHub" class="skills-img" />
-                            <h3>Git &amp; GitHub</h3>
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <img src="./assets/svg/git_and_github_icon.svg" alt="Git & GitHub">
+                        </div>
+                        <div class="skill-card-body">
+                            Git & GitHub
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2" data-groups='["other"]'>
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <img src="./assets/svg/linux.svg" alt="Linux" class="skills-img" />
-                            <h3>Linux</h3>
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <img src="./assets/svg/linux.svg" alt="linux">
+                        </div>
+                        <div class="skill-card-body">
+                            Linux
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2" data-groups='["other"]'>
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <img src="./assets/svg/unix_shell_icon.svg" alt="Unix shell" class="skills-img" />
-                            <h3>Unix shell</h3>
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <img src="./assets/svg/unix_shell_icon.svg" alt="Unix shell">
+                        </div>
+                        <div class="skill-card-body">
+                            Unix shell
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2" data-groups='["other"]'>
-                        <div class="skills-item pt-3 pb-1">
-                            <img src="./assets/svg/docker_icon.svg" alt="Docker" class="skills-img" />
-                            <h3>Docker</h3>
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <img src="./assets/svg/docker_icon.svg" alt="Docker">
+                        </div>
+                        <div class="skill-card-body">
+                            Docker
                         </div>
                     </div>
 
@@ -282,152 +256,111 @@
             </div>
         </section>
 
-        <section id="projects" class="section-projects">
+        <section id="projects">
             <div class="container">
-                <div class="text-center mb-5">
-                    <h2>Projets</h2>
-                    <p>Projets effectu&eacute;s et projets en cours</p>
-                    <p>&Eacute;galement accessible sur <a href="https://github.com/KevinLy1" target="_blank">GitHub</a>.</p>
-                </div>
-                
-                <h3 class="fs-6">Projets réalisés avec ALT-RH Consulting : également disponible sur <a href="https://github.com/KevinLy1/dwwm-projets" target="_blank">GitHub (compilation des projets)</a></h3>
-                <div class="row">
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2">
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <a href="./dwwm-projets/01-travel-agency/" target="_blank"><img
-                                    src="./assets/img/projects/01.png" alt="Travel Agency" class="projects-img" />
-                                <h3>Travel Agency</h3>
-                            </a>
-                            <p>Premi&egrave;re r&eacute;alisation</p>
+                <h2 class="section-title">Projets</h2>
+                <p class="section-description">Projets effectués et projets en cours. Également accessible sur <a href="https://github.com/KevinLy1/" target="_blank">GitHub</a>.</p>
+                <p>Projets réalisés avec ALT-RH Consulting : également disponible sur <a href="https://github.com/KevinLy1/dwwm-projets" target="_blank">GitHub (compilation des projets)</a>.</p>
+                <div class="grid">
+                    <div class="project-card">
+                        <div class="content">
+                            <h2 class="title">Travel Agency</h2>
+                            <p class="copy">Première maquette</p>
+                            <a class="btn" href="./dwwm-projets/01-travel-agency/" target="_blank">Démo</a>
+                            <a class="btn" href="https://github.com/KevinLy1/dwwm-projets/tree/main/01-travel-agency" target="_blank"><i class="devicon-github-original"></i> GitHub</a>
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2">
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <a href="./dwwm-projets/02-dem-move/index.html" target="_blank"><img
-                                    src="./assets/img/projects/02.png" alt="Dem-Move" class="projects-img" />
-                                <h3>Dem &amp; Move</h3>
-                            </a>
-                            <p>&Agrave; partir d'une maquette</p>
+                    <div class="project-card">
+                        <div class="content">
+                            <h2 class="title">Dem & Move</h2>
+                            <p class="copy">À partir d'une maquette</p>
+                            <a class="btn" href="./dwwm-projets/02-dem-move/" target="_blank">Démo</a>
+                            <a class="btn" href="https://github.com/KevinLy1/dwwm-projets/tree/main/02-dem-move" target="_blank"><i class="devicon-github-original"></i> GitHub</a>
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2">
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <a href="./dwwm-projets/03-agence-voyage/index.html" target="_blank"><img
-                                    src="./assets/img/projects/03.png" alt="Agence de voyage" class="projects-img" />
-                                <h3>Agence de voyage</h3>
-                            </a>
-                            <p>&Agrave; partir d'une maquette</p>
+                    <div class="project-card">
+                        <div class="content">
+                            <h2 class="title">Agence de voyage</h2>
+                            <p class="copy">À partir d'une maquette</p>
+                            <a class="btn" href="./dwwm-projets/03-agence-voyage/" target="_blank">Démo</a>
+                            <a class="btn" href="https://github.com/KevinLy1/dwwm-projets/tree/main/03-agence-voyage" target="_blank"><i class="devicon-github-original"></i> GitHub</a>
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2">
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <a href="./dwwm-projets/04-responsive/index.html" target="_blank"><img
-                                    src="./assets/img/projects/04.png" alt="Premier site responsive"
-                                    class="projects-img" />
-                                <h3>Premier site responsive</h3>
-                            </a>
-                            <p>Jusqu'&agrave; 400px en largeur</p>
+                    <div class="project-card">
+                        <div class="content">
+                            <h2 class="title">Premier site responsive</h2>
+                            <p class="copy">Jusqu'à 400px en largeur</p>
+                            <a class="btn" href="./dwwm-projets/04-responsive/" target="_blank">Démo</a>
+                            <a class="btn" href="https://github.com/KevinLy1/dwwm-projets/tree/main/04-responsive" target="_blank"><i class="devicon-github-original"></i> GitHub</a>
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2">
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <a href="./dwwm-projets/05-the-chief-place/index.html" target="_blank"><img
-                                    src="./assets/img/projects/05.png" alt="The Chief Place" class="projects-img" />
-                                <h3>The Chief Place</h3>
-                            </a>
-                            <p>Premier site bootstrap</p>
+                    <div class="project-card">
+                        <div class="content">
+                            <h2 class="title">The Chief Place</h2>
+                            <p class="copy">Première maquette</p>
+                            <a class="btn" href="./dwwm-projets/05-the-chief-place/" target="_blank">Démo</a>
+                            <a class="btn" href="https://github.com/KevinLy1/dwwm-projets/tree/main/05-the-chief-place" target="_blank"><i class="devicon-github-original"></i> GitHub</a>
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2">
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <a href="./dwwm-projets/06-moviz/build" target="_blank"><img
-                                    src="./assets/img/projects/06.png" alt="Moviz" class="projects-img" />
-                                <h3>Moviz</h3>
-                            </a>
-                            <p>Application React</p>
+                    <div class="project-card">
+                        <div class="content">
+                            <h2 class="title">Moviz</h2>
+                            <p class="copy">Application React</p>
+                            <a class="btn" href="./dwwm-projets/06-moviz/build" target="_blank">Démo</a>
+                            <a class="btn" href="https://github.com/KevinLy1/dwwm-projets/tree/main/06-moviz" target="_blank"><i class="devicon-github-original"></i> GitHub</a>
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2">
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <a href="./dwwm-projets/07-cloud-gaming-app/" target="_blank"><img
-                                    src="./assets/img/projects/07.png" alt="Cloud Gaming Application" class="projects-img" />
-                                <h3>Cloud Gaming App.</h3>
-                            </a>
-                            <p>Évaluation ECF1 - Front-end</p>
+                    <div class="project-card">
+                        <div class="content">
+                            <h2 class="title">Cloud Gaming Application</h2>
+                            <p class="copy">Évaluation ECF1 - Front-end</p>
+                            <a class="btn" href="./dwwm-projets/07-cloud-gaming-app/" target="_blank">Démo</a>
+                            <a class="btn" href="https://github.com/KevinLy1/dwwm-projets/tree/main/07-cloud-gaming-app" target="_blank"><i class="devicon-github-original"></i> GitHub</a>
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2">
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <a href="https://github.com/KevinLy1/dwwm-projets/tree/main/08-todolist" target="_blank"><img
-                                    src="./assets/img/projects/08.png" alt="Todolist" class="projects-img" />
-                                <h3>Todolist (PHP)</h3>
-                            </a>
-                            <p>Évaluation ECF2 - Back-end</p>
+                    <div class="project-card">
+                        <div class="content">
+                            <h2 class="title">Todolist (PHP)</h2>
+                            <p class="copy">Évaluation ECF2 - Back-end</p>
+                            <a class="btn" href="https://github.com/KevinLy1/dwwm-projets/tree/main/08-todolist" target="_blank"><i class="devicon-github-original"></i> GitHub</a>
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-4 col-xs-6 text-center my-2">
-                        <div class="skills-item pt-3 pb-1 h-100">
-                            <a href="https://github.com/KevinLy1/dwwm-projets/tree/main/09-blog" target="_blank"><img
-                                    src="./assets/img/projects/09.png" alt="Blog" class="projects-img" />
-                                <h3>Blog communautaire (PHP)</h3>
-                            </a>
-                            <p>Réalisé sur cinq jours</p>
+                    <div class="project-card">
+                        <div class="content">
+                            <h2 class="title">Blog communautaire (PHP)</h2>
+                            <p class="copy">Réalisé sur cinq jours</p>
+                            <a class="btn" href="https://github.com/KevinLy1/dwwm-projets/tree/main/09-blog" target="_blank"><i class="devicon-github-original"></i> GitHub</a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="parallax container-fluid text-center d-flex flex-column justify-content-around">
-                <h2>Prêt &agrave; travailler ensemble ?</h2>
-                <p><a href="#contact" class="btn btn-dark">Contactez-moi</a></p>
-            </div>
-        </section>
-
-        <section id="contact" class="section-contact">
-            <div class="container text-center">
-                <h2>Informations de contact</h2>
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-description">Informations de contact</p>
                 <p><a href="mailto:kevin.ly.ap@outlook.com">kevin.ly.ap@outlook.com</a></p>
                 <p><a href="tel:+33634370766">+33 6 34 37 07 66</a></p>
             </div>
         </section>
-
-        <section class="section-networks">
-            <div class="container text-center d-flex justify-content-around w-50">
-                <a href="tel:+33634370766">
-                    <i class="fa fa-phone"></i>
-                </a>
-                <a href="mailto:kevin.ly.ap@outlook.com">
-                    <i class="fa fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/kevin-ly-12579573/" target="_blank">
-                    <i class="devicon-linkedin-plain"></i>
-                </a>
-                <a href="https://github.com/KevinLy1/kevin-ly" target="_blank">
-                    <i class="devicon-github-original"></i>
-                </a>
-            </div>
-        </section>
-
     </main>
 
     <footer>
-        <div class="container d-flex justify-content-center">
-            <p>Copyright &copy; Kevin Ly - 2023. Tous droits r&eacute;serv&eacute;s.</p>
+        <div class="container">
+            Copyright Kevin Ly. &copy; <span id="year"></span>. Tous droits réservés.
         </div>
     </footer>
 
-    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

@@ -65,7 +65,7 @@ header.minimized + main, header.minimized + main + footer {
 }
 
 @media screen and (max-width: 992px) {
-  main, footer {
+  main, footer, header.minimized + main, header.minimized + main + footer {
     margin-left: 0;
   }
   

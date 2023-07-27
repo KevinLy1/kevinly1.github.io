@@ -93,6 +93,14 @@
     background-image: url(../../img/projects/09.png);
 }
 
+.project-card:nth-child(10):before {
+    background-image: url(../../img/projects/10.png);
+}
+
+.project-card:nth-child(11):before {
+    background-image: url(../../img/projects/11.png);
+}
+
 .content {
   position: relative;
   display: flex;
